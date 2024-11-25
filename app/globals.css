@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color-scheme: dark;
+}
+
+svg {
+  display: inline-block;
+}
+
+@layer components {
+  .btn {
+    @apply flex px-2 md:px-4 py-2 items-center justify-center rounded-lg font-medium hover:enabled:opacity-70;
+  }
+  .btn.primary {
+    @apply bg-primary text-primary-contrastText;
+  }
+  .btn.secondary {
+    @apply border;
+  }
+
+  .highlight-color-transparent {
+    -webkit-tap-highlight-color: transparent;
+  }
+  /* ... */
+}
