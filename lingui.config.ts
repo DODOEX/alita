@@ -9,7 +9,6 @@ const config = {
         'components',
         'constants',
         'hooks',
-        'submission',
         'providers',
         'utils',
       ],

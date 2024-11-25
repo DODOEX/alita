@@ -2,6 +2,7 @@
 import clsx from 'clsx';
 import { MenuItem } from './type';
 import { Tooltip } from '@dodoex/components';
+import { Trans } from '@lingui/macro';
 
 export default function NavItemComingSoon({
   menu,
@@ -12,7 +13,7 @@ export default function NavItemComingSoon({
 }) {
   if (!menu.comingSoon) throw new Error(`Menu ${menu.name} is not coming soon`);
   return (
-    <Tooltip title="Coming soon">
+    <Tooltip title={<Trans>Coming soon</Trans>}>
       <span className={clsx(className, 'text-secondary cursor-pointer')}>
         {menu.name}
       </span>

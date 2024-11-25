@@ -3,6 +3,7 @@ import { ArrowRight } from '@dodoex/icons';
 import { MenuItem } from '../type';
 import Link from 'next/link';
 import clsx from 'clsx';
+import { Trans } from '@lingui/macro';
 
 export default function NavDialogContent({
   open,
@@ -24,7 +25,9 @@ export default function NavDialogContent({
       container={() => rootRef.current!}
       onClose={onClose}
     >
-      <DialogTitle onClose={onClose}>Products</DialogTitle>
+      <DialogTitle onClose={onClose}>
+        <Trans>Products</Trans>
+      </DialogTitle>
       {menuList.map((menu) => {
         const key = menu.name;
         const baseClassName =

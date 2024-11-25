@@ -3,12 +3,15 @@ import Link from 'next/link';
 import { MenuItem } from './type';
 import NavItemComingSoon from './NavItemComingSoon';
 import NavDialog from './NavDialog';
+import { t } from '@lingui/macro';
+import { useLingui } from '@lingui/react';
 
 export default function TopNav() {
+  const { i18n } = useLingui();
   const menuList = [
-    { name: 'Swap', url: '/' },
-    { name: 'Pool', comingSoon: true },
-    { name: 'Farm', comingSoon: true },
+    { name: t(i18n)`Swap`, url: '/' },
+    { name: t(i18n)`Pool`, comingSoon: true },
+    { name: t(i18n)`Mining`, comingSoon: true },
   ] as Array<MenuItem>;
 
   return (

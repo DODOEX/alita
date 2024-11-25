@@ -2,13 +2,19 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { manropeFont } from '@/utils/fonts';
 import clsx from 'clsx';
-import { DESCRIPTION, TITLE } from '@/constants/config';
+import bgImage from '@/assets/bg.png';
+import Image from 'next/image';
+import React from 'react';
+import { DESCRIPTION, TITLE, SINGLE_CHAIN_NAME } from '@/constants/config';
 import { getI18nInstance } from '@/providers/i18n/appRouterI18n';
 import { setI18n } from '@lingui/react/server';
 import { LinguiClientProvider } from '@/providers/i18n/LinguiClientProvider';
 import ClientProvider from '@/providers/ClientProvider';
-import bgImage from '@/assets/bg.png';
-import Image from 'next/image';
+import ConnectWalletBtn from '@/components/ConnectWalletBtn';
+import SingleChainIcon from '@/assets/logo/single-chain.svg';
+import LogoAndTextIcon from '@/assets/logo/logo-and-text.svg';
+import LogoIcon from '@/assets/logo/logo.svg';
+import TopNav from '@/components/nav/TopNav';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -45,7 +51,34 @@ export default async function RootLayout({
             initialLocale={lang}
             initialMessages={i18n.messages}
           >
-            <ClientProvider>{children}</ClientProvider>
+            <React.Suspense>
+              <ClientProvider>
+                <div>
+                  <header className="flex justify-between items-center px-5 md:px-6 py-3 text-sm md:text-base">
+                    <div className="flex items-center gap-3">
+                      <LogoAndTextIcon className="hidden md:block" />
+                      <LogoIcon className="md:hidden" />
+                      <TopNav />
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <button
+                        className="btn gap-2 secondary rounded-[20px] bg-hover shadow-[0_0_10px_0_rgba(255,255,255,0.25)_inset]"
+                        disabled
+                      >
+                        <SingleChainIcon />
+                        <div className="hidden md:inline-block">
+                          {SINGLE_CHAIN_NAME}
+                        </div>
+                      </button>
+                      <ConnectWalletBtn />
+                    </div>
+                  </header>
+                  <main className="flex flex-col items-center px-5 md:px-0 mt-7 md:mt-[100px]">
+                    {children}
+                  </main>
+                </div>
+              </ClientProvider>
+            </React.Suspense>
           </LinguiClientProvider>
         </div>
       </body>

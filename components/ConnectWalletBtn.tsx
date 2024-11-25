@@ -1,6 +1,7 @@
 'use client';
 import WalletIcon from '@/assets/icons/wallet.svg';
 import { truncatePoolAddress } from '@/utils/address';
+import { Trans } from '@lingui/macro';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { useWalletModal } from '@solana/wallet-adapter-react-ui';
 
@@ -28,7 +29,7 @@ export default function ConnectWalletBtn() {
       }}
     >
       <WalletIcon />
-      Connect a wallet
+      <Trans>Connect a wallet</Trans>
     </button>
   );
 }
