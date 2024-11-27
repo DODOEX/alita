@@ -11,13 +11,15 @@
     "compile": "lingui compile --typescript"
   },
   "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
     "@dodoex/components": "3.0.0",
-    "@dodoex/widgets": "3.0.1-solana.1",
+    "@dodoex/widgets": "3.0.1-solana.2",
     "@lingui/macro": "^4.3.0",
     "@lingui/react": "^4.3.0",
     "@solana/wallet-adapter-react": "^0.15.35",
     "@solana/wallet-adapter-react-ui": "^0.9.35",
     "@solana/wallet-adapter-wallets": "^0.19.32",
+    "@solana/web3.js": "^1.95.5",
     "@svgr/webpack": "^8.1.0",
     "@tanstack/react-query": "^5.18.1",
     "clsx": "^2.1.1",

@@ -1,20 +1,29 @@
 const tokenList = [
   {
-    decimals: 18,
-    logoURI: 'https://bridge.testnet.soo.network/assets/_P-icon-BQN19dSx.png',
-    name: '$P',
-    address: '6sRQN8MvjSagGhnJG6eK8FcEq9nwuF1nbBHbx5zGQsBo',
-    symbol: '$P',
-    chainId: -99999,
+    decimals: 9,
+    name: 'SOL',
+    address: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
+    symbol: 'SOL',
+    chainId: -1000,
+    logoURI:
+      'https://imageresizer.xnftdata.com/anim=false,fit=contain,width=400,height=400,quality=85/https://s3.amazonaws.com/app-assets.xnfts.dev/images/network-logo-replacement-solana.png',
+    side: 'from',
   },
   {
-    decimals: 18,
+    decimals: 9,
+    name: 'WSOL',
+    address: 'So11111111111111111111111111111111111111112',
+    symbol: 'WSOL',
+    chainId: -1000,
     logoURI:
-      'https://maticnetwork.github.io/polygon-token-assets/assets/eth.svg',
-    name: 'Ether',
-    address: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
-    symbol: 'ETH',
-    chainId: -99999,
+      'https://imageresizer.xnftdata.com/anim=false,fit=contain,width=400,height=400,quality=85/https://s3.amazonaws.com/app-assets.xnfts.dev/images/network-logo-replacement-solana.png',
+  },
+  {
+    decimals: 9,
+    name: 'test1',
+    address: 'W9qPz1vXFmKago2TsUJeixxh1tSEzeimebJEEf2kY2j',
+    symbol: 'test1',
+    chainId: -1000,
   },
 ];
 

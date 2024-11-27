@@ -7,6 +7,7 @@ import { WidgetProps, UnstyleWidget } from '@dodoex/widgets';
 import React from 'react';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { useWalletModal } from '@solana/wallet-adapter-react-ui';
+import tokenList from '@/constants/tokenList';
 
 export default function Widget({
   children,
@@ -23,26 +24,7 @@ export default function Widget({
         height="100%"
         defaultChainId={SINGLE_CHAIN_ID}
         onlyChainId={SINGLE_CHAIN_ID}
-        tokenList={[
-          {
-            decimals: 18,
-            logoURI:
-              'https://bridge.testnet.soo.network/assets/_P-icon-BQN19dSx.png',
-            name: '$P',
-            address: '6sRQN8MvjSagGhnJG6eK8FcEq9nwuF1nbBHbx5zGQsBo',
-            symbol: '$P',
-            chainId: -99999,
-          },
-          {
-            decimals: 18,
-            logoURI:
-              'https://maticnetwork.github.io/polygon-token-assets/assets/eth.svg',
-            name: 'Ether',
-            address: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
-            symbol: 'ETH',
-            chainId: -99999,
-          },
-        ]}
+        tokenList={tokenList}
         onlySolana
         solanaWallet={wallet}
         theme={{

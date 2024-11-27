@@ -73,7 +73,7 @@ export default async function RootLayout({
                       <ConnectWalletBtn />
                     </div>
                   </header>
-                  <main className="flex flex-col items-center px-5 md:px-0 mt-7 md:mt-[100px]">
+                  <main className="flex flex-col items-center px-3 md:px-0 mt-7 md:mt-[100px]">
                     {children}
                   </main>
                 </div>

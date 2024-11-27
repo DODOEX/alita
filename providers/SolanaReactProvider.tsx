@@ -16,7 +16,7 @@ export function SolanaReactProvider(props: PropsWithChildren) {
 
   // You can also provide a custom RPC endpoint.
   // const endpoint = useMemo(() => clusterApiUrl(network), [network]);
-  const endpoint = 'https://rpc.devnet.soo.network/rpc';
+  const endpoint = 'https://rpc.testnet.soo.network/rpc';
 
   const wallets = useMemo(
     () => [

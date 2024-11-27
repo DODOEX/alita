@@ -26,7 +26,7 @@ module.exports = {
       },
       colors: {
         paper: '#FFF',
-        border: '#3F434A',
+        border: 'rgba(255, 255, 255, 0.1)',
         'primary-contrastText': '#FFF',
       },
       backgroundColor: {
@@ -35,7 +35,7 @@ module.exports = {
         paper: '#23252B',
         paperContrast: '#F6F6F6',
         paperDarkContrast: 'rgba(255, 255, 255, 0.1)',
-        border: '#3F434A',
+        border: 'rgba(255, 255, 255, 0.1)',
         tag: 'rgba(255, 255, 255, 0.04)',
         hover: 'rgba(255, 255, 255, 0.04)',
         backdrop: 'rgba(0, 0, 0, 0.9)',

@@ -30,7 +30,7 @@ export const palette = {
     default: '#140C05',
     paper: '#23252B',
     // tooltip
-    paperContrast: '#1E170E',
+    paperContrast: '#23252B',
     // paperDarkContrast: alpha('#FFF', 0.1),
     // backdrop: alpha('#000', 0.9),
     input: '#35363C',
@@ -44,7 +44,7 @@ export const palette = {
     link: '#FFE804',
   },
   border: {
-    main: 'rgba(118, 83, 33, 0.50)',
+    main: 'rgba(255, 255, 255, 0.1)',
     light: alpha('#FFF', 0.3),
     disabled: alpha('#FFF', 0.1),
   },
