@@ -1444,10 +1444,10 @@
   dependencies:
     "@babel/runtime" "^7.17.2"
 
-"@dodoex/widgets@3.0.1-solana.2":
-  version "3.0.1-solana.2"
-  resolved "https://registry.yarnpkg.com/@dodoex/widgets/-/widgets-3.0.1-solana.2.tgz#b0fcd3b780f8aa1eb0dd05e17f93ca90f8f8989c"
-  integrity sha512-qsS1K21TVQk4Fa7J0scyhW9V1+7QA1/UGMi/XlmwtBwg/12MrUavO2B7k7d0/OoEHOPCxjBC316J9axOXCHFxg==
+"@dodoex/widgets@3.0.1-solana.3":
+  version "3.0.1-solana.3"
+  resolved "https://registry.yarnpkg.com/@dodoex/widgets/-/widgets-3.0.1-solana.3.tgz#059dff171f98d2006ea30797d9c45e6e7e1aa8f6"
+  integrity sha512-ewL+b9Nz618ifudk7aIIDOvJSSVbsLk99TnUiD3a9S1V1H0zHVCQRnej1WytHbm2zoZ+p1OqtlPK8v8q+82Aqg==
   dependencies:
     "@babel/runtime" "^7.17.0"
     "@coral-xyz/anchor" "^0.30.1"

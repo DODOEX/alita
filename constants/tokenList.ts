@@ -7,7 +7,7 @@ const tokenList = [
     chainId: -1000,
     logoURI:
       'https://imageresizer.xnftdata.com/anim=false,fit=contain,width=400,height=400,quality=85/https://s3.amazonaws.com/app-assets.xnfts.dev/images/network-logo-replacement-solana.png',
-    side: 'from',
+    side: 'from' as const,
   },
   {
     decimals: 9,

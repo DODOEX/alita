@@ -17,7 +17,7 @@ msgstr ""
 msgid "Coming soon"
 msgstr "Coming soon"
 
-#: components/ConnectWalletBtn.tsx:33
+#: components/ConnectWalletBtn.tsx:32
 msgid "Connect a wallet"
 msgstr "Connect a wallet"
 
