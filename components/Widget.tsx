@@ -5,7 +5,6 @@ import { palette } from '@/constants/theme';
 import { manropeFont } from '@/utils/fonts';
 import { WidgetProps, UnstyleWidget } from '@dodoex/widgets';
 import React from 'react';
-import { useWallet } from '@solana/wallet-adapter-react';
 import { useWalletModal } from '@solana/wallet-adapter-react-ui';
 import tokenList from '@/constants/tokenList';
 
@@ -13,7 +12,6 @@ export default function Widget({
   children,
   ...props
 }: React.PropsWithChildren<WidgetProps>) {
-  const wallet = useWallet();
   const { setVisible } = useWalletModal();
   return (
     <React.Suspense>
@@ -26,7 +24,7 @@ export default function Widget({
         onlyChainId={SINGLE_CHAIN_ID}
         tokenList={tokenList}
         onlySolana
-        solanaWallet={wallet}
+        noSolanaProvider
         theme={{
           palette,
           typography: {
