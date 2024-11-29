@@ -41,6 +41,7 @@ module.exports = {
         backdrop: 'rgba(0, 0, 0, 0.9)',
         skeleton: 'rgba(25, 26, 27, 0.11)',
         input: '#F0F0F0',
+        'footer-link-hover': '#FFFFFF',
       },
       zIndex: {
         modal: '1300',
