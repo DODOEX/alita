@@ -111,7 +111,7 @@ export default async function RootLayout({
             </svg>
           </a>
           <a
-            href={`mailto: ${CONTRACT_EMAIL}`}
+            href={`mailto:${CONTRACT_EMAIL}`}
             className="flex items-center justify-center w-8 h-8 rounded-full border text-active hover:bg-footer-link-hover"
           >
             <svg

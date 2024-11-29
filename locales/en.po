@@ -21,6 +21,10 @@ msgstr "Coming soon"
 msgid "Connect a wallet"
 msgstr "Connect a wallet"
 
+#: app/layout.tsx:93
+msgid "Contact us"
+msgstr "Contact us"
+
 #: components/nav/TopNav.tsx:14
 msgid "Mining"
 msgstr "Mining"
