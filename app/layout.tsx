@@ -64,28 +64,30 @@ export default async function RootLayout({
             initialMessages={i18n.messages}
           >
             <React.Suspense>
-              <header className="flex justify-between items-center px-5 md:px-6 py-3 text-sm md:text-base">
-                <div className="flex items-center gap-3">
-                  <LogoAndTextIcon className="hidden md:block" />
-                  <LogoIcon className="md:hidden" />
-                  <TopNav />
-                </div>
-                <div className="flex items-center gap-2">
-                  <button
-                    className="btn gap-2 secondary rounded-[20px] bg-hover shadow-[0_0_10px_0_rgba(255,255,255,0.25)_inset]"
-                    disabled
-                  >
-                    <SingleChainIcon />
-                    <div className="hidden md:inline-block">
-                      {SINGLE_CHAIN_NAME}
-                    </div>
-                  </button>
-                  <ConnectWalletBtn />
-                </div>
-              </header>
-              <main className="flex flex-col items-center px-3 md:px-0 mt-7 md:mt-[100px]">
-                <ClientProvider>{children}</ClientProvider>
-              </main>
+              <ClientProvider>
+                <header className="flex justify-between items-center px-5 md:px-6 py-3 text-sm md:text-base">
+                  <div className="flex items-center gap-3">
+                    <LogoAndTextIcon className="hidden md:block" />
+                    <LogoIcon className="md:hidden" />
+                    <TopNav />
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <button
+                      className="btn gap-2 secondary rounded-[20px] bg-hover shadow-[0_0_10px_0_rgba(255,255,255,0.25)_inset]"
+                      disabled
+                    >
+                      <SingleChainIcon />
+                      <div className="hidden md:inline-block">
+                        {SINGLE_CHAIN_NAME}
+                      </div>
+                    </button>
+                    <ConnectWalletBtn />
+                  </div>
+                </header>
+                <main className="flex flex-col items-center px-3 md:px-0 mt-7 md:mt-[100px]">
+                  {children}
+                </main>
+              </ClientProvider>
             </React.Suspense>
           </LinguiClientProvider>
         </div>
